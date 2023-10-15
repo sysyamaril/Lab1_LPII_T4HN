@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD de Usuarios</title>
+</head>
+<body>
+    <h1>CRUD de Usuarios</h1>
+    <h2>Crear Usuario</h2>
+    <form action="/crearUsuario" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Apellido: <input type="text" name="apellido"><br>
+        País: <input type="text" name="pais"><br>
+        <input type="submit" value="Crear">
+    </form>
+
+    <h2>Leer Usuario</h2>
+    <form action="/leerUsuario" method="get">
+        ID del Usuario: <input type="text" name="id"><br>
+        <input type="submit" value="Leer">
+    </form>
+
+    <h2>Actualizar Usuario</h2>
+    <form action="/actualizarUsuario" method="post">
+        ID del Usuario: <input type="text" name="id"><br>
+        Nuevo Nombre: <input type="text" name="nuevoNombre"><br>
+        <input type="submit" value="Actualizar">
+    </form>
+
+    <h2>Eliminar Usuario</h2>
+    <form action="/eliminarUsuario" method="post">
+        ID del Usuario: <input type="text" name="id"><br>
+        <input type="submit" value="Eliminar">
+    </form>
+</body>
+</html>
